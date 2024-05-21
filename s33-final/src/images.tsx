@@ -9,18 +9,18 @@ const ImagesPage: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-blue-200 flex flex-col items-center">
-      <nav className="bg-gray-200 w-full py-4 flex justify-between items-center px-8 shadow-md">
-        <div className="flex space-x-4">
-          <button className="text-gray-700 font-semibold">Home</button>
-          <button className="text-gray-700 font-semibold">Audio</button>
-          <button className="text-gray-700 font-semibold">Video</button>
-          <button className="text-gray-700 font-semibold">Journal</button>
-        </div>
-        <button className="text-gray-700 font-semibold">Log out</button>
-      </nav>
+    <div className="buttons">
       {!selectedImage ? (
         <>
+          <nav className="navigation">
+            <div className="nav-buttons">
+              <button className="home-button">Home</button>
+              <button className="audio-button">Audio</button>
+              <button className="video-button">Video</button>
+              <button className="journal-button">Journal</button>
+            </div>
+            <button className="logout-button">Log out</button>
+          </nav>
           <h1 className="choose-image">Choose Your Image</h1>
           <div className="image-buttons">
             <button
@@ -32,25 +32,33 @@ const ImagesPage: React.FC = () => {
               className="image-1"
             ></button>
             <button
-              onClick={() => handleImageClick("path/to/image2.jpg")}
+              onClick={() =>
+                handleImageClick(
+                  "https://cdn.pixabay.com/photo/2017/09/11/00/18/beach-2737460_960_720.jpg"
+                )
+              }
               className="image-2"
             ></button>
             <button
-              onClick={() => handleImageClick("path/to/image3.jpg")}
+              onClick={() =>
+                handleImageClick(
+                  "https://img.freepik.com/free-photo/lush-grass-ripe-wheat-natural-setting_60438-3615.jpg"
+                )
+              }
               className="image-3"
             ></button>
           </div>
         </>
       ) : (
-        <div className="flex flex-col items-center justify-center min-h-screen">
+        <div className="selected-image-container">
           <img
             src={selectedImage}
             alt="Selected Meditation Image"
-            className="w-full h-full object-cover"
+            className="selected-image"
             onClick={() => setSelectedImage(null)}
           />
           <button
-            className="absolute top-4 right-4 bg-white text-gray-700 px-4 py-2 rounded-md shadow-md"
+            className="close-button"
             onClick={() => setSelectedImage(null)}
           >
             Close
