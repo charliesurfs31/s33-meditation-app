@@ -49,6 +49,7 @@ body {
     display: flex;
     justify-content: center;
     margin-top: 50px;
+    margin-left: 100px;
   }
   
   .choose-image {
@@ -87,3 +88,7 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   }
   
+
+  .home {
+    color: antiquewhite;
+  }

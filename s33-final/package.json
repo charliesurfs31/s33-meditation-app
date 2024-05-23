@@ -10,7 +10,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+<<<<<<< HEAD
     "firebase": "^10.12.1",
+=======
+    "@material-tailwind/react": "^2.1.9",
+>>>>>>> 7472a0f1d49384a6eb382d7964a824baba9a3f91
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
