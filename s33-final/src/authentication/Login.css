@@ -1,0 +1,75 @@
+/* Login.css */
+.login-container {
+    text-align: center;
+    padding: 2rem;
+    background-color: lightblue;
+    font-style: italic;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 300px;
+    margin-top: 2rem; /* Add margin to the top */
+    margin-bottom: 2rem; /* Add margin to the bottom */
+}
+
+input {
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+button {
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 0.6em 1.2em;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: border-color 0.25s;
+    border-radius: 4px;
+    margin-top: 1rem;
+    margin-bottom: 1rem; /* Add margin to the bottom */
+    width: auto;
+    height: auto;
+}
+
+button:disabled {
+    color: gray;
+    border: 1px solid gray;
+    cursor: not-allowed;
+}
+
+.error {
+    color: red;
+    margin-top: 1rem;
+}
+
+.link-button {
+    color: #0095f6;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+p {
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    color: white;
+}
