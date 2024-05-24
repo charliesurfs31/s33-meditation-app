@@ -13,8 +13,8 @@ button {
     background: transparent;
     color: white;
     font-size: 1rem;
-    width: 50px; /* Adjust the width as desired */
-    height: 50px; /* Adjust the height as desired */
+    width: 50px;
+    height: 50px;
 }
 
 button:focus {
