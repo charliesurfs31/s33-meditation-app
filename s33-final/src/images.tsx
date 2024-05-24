@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./images.css";
 
 const ImagesPage: React.FC = () => {
@@ -10,17 +11,21 @@ const ImagesPage: React.FC = () => {
 
   return (
     <div className="buttons">
+      <nav className="navigation">
+        <div className="nav-buttons">
+          <Link to="/welcome" className="nav-button">
+            Home
+          </Link>
+          <Link to="/audio" className="nav-button">
+            Audio
+          </Link>
+          <Link to="/images" className="nav-button">
+            Images
+          </Link>
+        </div>
+      </nav>
       {!selectedImage ? (
         <>
-          <nav className="navigation">
-            <div className="nav-buttons">
-              <button className="home-button">Home</button>
-              <button className="audio-button">Audio</button>
-              <button className="video-button">Video</button>
-              <button className="journal-button">Journal</button>
-            </div>
-            <button className="logout-button">Log out</button>
-          </nav>
           <h1 className="choose-image">Choose Your Image</h1>
           <div className="image-buttons">
             <button

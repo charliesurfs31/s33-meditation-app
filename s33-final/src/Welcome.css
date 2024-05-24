@@ -1,0 +1,37 @@
+/* WelcomePage.css */
+
+.welcome-container {
+    text-align: center;
+    padding: 2rem;
+  }
+  
+.buddha-image {
+    width: 250px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+  .button-container {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .nav-button {
+    background: transparent;
+    color: white;
+    border: none;
+    font-size: 2rem; /* Double the font size */
+    padding: 1.2em 2.4em; /* Increase padding */
+    cursor: pointer;
+    margin: 1rem; /* Add margin to space out buttons */
+    text-align: center;
+    width: auto;
+    height: auto;
+  }
+  
+  .nav-button:hover {
+    text-decoration: underline;
+  }
+  
